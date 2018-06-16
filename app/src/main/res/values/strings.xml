@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sklep z rowerami</string>
+    <string name="title_activity_bicycle_list">Lista rowerów</string>
+    <string name="title_activity_create_bicycle">Dodaj nowy rower</string>
+    <string name="save">Zapisz</string>
+    <string name="bicycle_name">Nazwa</string>
+    <string name="bicycle_description">Krótki opis</string>
+    <string name="bicycle_price">Cena</string>
+    <string name="bicycle_picture">Zdjęcie rowera</string>
+    <string name="success">Operacja zostałą zakończona pomyślnie</string>
+    <string name="main_title">Aplikacja powstała na zaliczenie przedmiotu PAMO.</string>
+    <string name="autor">Mateusz Sielawa s9267</string>
+</resources>

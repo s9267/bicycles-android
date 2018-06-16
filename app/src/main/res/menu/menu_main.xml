@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="pjatk.pl.bicycles.view.activity.MainActivity">
+    <item
+        android:id="@+id/action_show_bicycles"
+        android:orderInCategory="100"
+        android:title="@string/title_activity_bicycle_list"
+        app:showAsAction="always" />
+</menu>

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Sklep z rowerami</string>
     <string name="title_activity_bicycle_list">Lista rowerów</string>
+    <string name="title_activity_user_list">Lista klientów</string>
     <string name="title_activity_create_bicycle">Dodaj nowy rower</string>
     <string name="save">Zapisz</string>
     <string name="bicycle_name">Nazwa</string>

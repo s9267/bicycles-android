@@ -30,8 +30,12 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_show_bicycles:
-                Intent myIntent = new Intent(this, BicycleListActivity.class);
-                startActivityForResult(myIntent, 0);
+                Intent bicycleIntent = new Intent(this, BicycleListActivity.class);
+                startActivityForResult(bicycleIntent, 0);
+                return true;
+            case R.id.action_show_clients:
+                Intent clientIntent = new Intent(this, ClientListActivity.class);
+                startActivityForResult(clientIntent, 0);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

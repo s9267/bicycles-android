@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pjatk.pl.bicycles">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -21,10 +23,11 @@
         </activity>
         <activity
             android:name=".view.activity.BicycleListActivity"
-            android:label="@string/title_activity_bicycle_list"></activity>
+            android:label="@string/title_activity_bicycle_list" />
         <activity
             android:name=".view.activity.CreateBicycleActivity"
-            android:label="@string/title_activity_create_bicycle"></activity>
+            android:label="@string/title_activity_create_bicycle" />
+        <activity android:name=".view.activity.ClientListActivity"></activity>
     </application>
 
 </manifest>

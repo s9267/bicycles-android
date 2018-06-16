@@ -42,12 +42,6 @@ public class BicycleDbHelper extends SQLiteOpenHelper {
             "DROP TABLE IF EXISTS " + BICYCLE_TABLE_NAME;
 
     public static BicycleDbHelper getInstance(Context ctx) {
-        /**
-         * use the application context as suggested by CommonsWare.
-         * this will ensure that you dont accidentally leak an Activitys
-         * context (see this article for more information:
-         * http://developer.android.com/resources/articles/avoiding-memory-leaks.html)
-         */
         if (INSTANCE == null) {
             INSTANCE = new BicycleDbHelper(ctx.getApplicationContext());
         }

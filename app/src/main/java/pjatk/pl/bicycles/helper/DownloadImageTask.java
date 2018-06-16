@@ -16,7 +16,7 @@ public class DownloadImageTask extends AsyncTask<String, Void, Drawable> {
     protected Drawable doInBackground(String... urls) {
         try {
             InputStream is = (InputStream) new URL(urls[0]).getContent();
-            return Drawable.createFromStream(is, "src name");
+            return Drawable.createFromStream(is, "");
         } catch (Exception e) {
             e.printStackTrace();
             return null;

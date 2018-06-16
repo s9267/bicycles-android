@@ -1,6 +1,8 @@
 package pjatk.pl.bicycles.view.activity;
 
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -50,21 +52,20 @@ public class CreateBicycleActivity extends AppCompatActivity {
         String price = editTextPrice.getText().toString();
         String picture = editTextPicture.getText().toString();
 
-        dbHelper.create(new Bicycle(name, description, new BigDecimal(price),picture));
+        dbHelper.create(new Bicycle(name, description, new BigDecimal(price), picture));
 
-        final Dialog dialog = new Dialog(this);
-        dialog.setContentView(R.layout.dialog_success);
-        dialog.setTitle("Zapisano!");
-        TextView text = dialog.findViewById(R.id.dialog_text);
-        text.setText(R.string.success);
-        Button dialogButton = dialog.findViewById(R.id.dialog_button);
-        dialogButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                dialog.dismiss();
-            }
-        });
-        dialog.show();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Zapisano!");
+        builder.setMessage(R.string.success)
+                .setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,
+                                                int id) {
+
+                            }
+                        });
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 }
 
